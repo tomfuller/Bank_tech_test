@@ -36,12 +36,12 @@ describe Account do
 
     it 'should be able to create a new deposit' do
       date = DateTime.now.strftime('%d/%m/%Y')
-      expect(account.deposit(500)).to have_attributes(:action => 'Deposit', :amount => 500, :date => date)
+      expect(account.deposit(500)).to have_attributes(:action => 'Deposit', :amount => 500, :date => date, :balance => 500)
     end
 
     it 'should be able to create a new withdrawal' do
       date = DateTime.now.strftime('%d/%m/%Y')
-      expect(account.withdraw(500)).to have_attributes(:action => 'Withdraw', :amount => 500, :date => date)
+      expect(account.withdraw(500)).to have_attributes(:action => 'Withdraw', :amount => 500, :date => date, :balance => -500)
     end
   end
 end
