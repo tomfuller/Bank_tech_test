@@ -17,7 +17,7 @@ I started by writing a list of the message which would need to be sent to meet t
 2. Install(gem install bundle) and run 'bundle'
 3. Open your favourite REPL (pry, irb, etc..)
 4. Require './lib/quick_require'
-5. Create an account with Account.new, deposit(.deposit), withdraw(.withdraw) and print your statement(.bank_statement.print_statement)
+5. Create an account with Account.new, deposit(.deposit), withdraw(.withdraw) and print your statement(.print_statement)
 ![alt text](./How_to_use_bank.png)
 
 #### Run the tests
