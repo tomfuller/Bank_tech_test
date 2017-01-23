@@ -23,9 +23,17 @@ class Account
       transaction
     end
 
+    def print_statement
+      bank_statement_printer
+    end
+
     private
 
     attr_writer :balance
+
+    def bank_statement_printer
+      self.bank_statement.print_statement
+    end
 
     def send_transaction_to_statement(transaction)
       self.bank_statement.push(transaction)

@@ -12,6 +12,11 @@ describe Account do
       expect(account.bank_statement).to eq bank_statement
     end
 
+    it 'should be able to print a bank statement' do
+      allow(bank_statement).to receive(:print_statement).and_return('statement')
+      expect(account.print_statement).to eq 'statement'
+    end
+
   end
 
   context 'tests balance' do
