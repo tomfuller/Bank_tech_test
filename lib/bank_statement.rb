@@ -16,7 +16,7 @@ class BankStatement
 
   def print_statement
     statement = STATEMENT_TITLE_LINE
-    self.transactions.each do |transaction|
+    self.transactions.reverse.each do |transaction|
       if transaction.action == 'Deposit'
         statement += create_deposit_line(transaction)
       else
