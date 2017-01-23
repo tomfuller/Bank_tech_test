@@ -8,4 +8,9 @@ describe BankStatement do
     expect(bank_statement.transactions).to eq []
   end
 
+  it 'should accept a new transaction' do
+    bank_statement.push('Transaction')
+    expect(bank_statement.transactions).to eq ['Transaction']
+  end
+
 end
