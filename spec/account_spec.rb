@@ -21,7 +21,7 @@ describe Account do
 
   context 'tests balance' do
 
-    it 'should test that account is initialied with a balance of zero' do
+    it 'should test that account is initialized with a balance of zero' do
       expect(account.balance).to eq 0
     end
 

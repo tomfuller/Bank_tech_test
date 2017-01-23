@@ -14,7 +14,7 @@ I started by writing a list of the message which would need to be sent to meet t
 #### Try it out
 
 1. Clone this repo into a local depository on your machine.
-2. Install(gem install bundle) and run 'bundle'
+2. Install(`gem install bundle`) and run `bundle`
 3. Open your favourite REPL (pry, irb, etc..)
 4. Require './lib/quick_require'
 5. Create an account with Account.new, deposit(.deposit), withdraw(.withdraw) and print your statement(.print_statement)
