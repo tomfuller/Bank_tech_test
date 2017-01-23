@@ -2,9 +2,9 @@
 
 A short tech test to be completed in a couple of hours. The following requirements were given:
 
-You should be able to interact with the your code via a REPL like IRB or the JavaScript console. (You don't need to implement a command line interface that takes input from STDIN.)
-Deposits, withdrawal.
-Account statement (date, amount, balance) printing.
+You should be able to interact with the your code via a REPL like IRB or the JavaScript console. (You don't need to implement a command line interface that takes input from STDIN.)\n
+Deposits, withdrawal.\n
+Account statement (date, amount, balance) printing.\n
 Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
 #### My approach
