@@ -2,9 +2,9 @@ class Account
 
     attr_reader :balance, :bank_statement
 
-    def initialize(statement_object = BankStatement)
+    def initialize(statement_object = BankStatement.new)
       @balance = 0.00
-      @bank_statement = statement_object.new
+      @bank_statement = statement_object
     end
 
     def deposit(amount)

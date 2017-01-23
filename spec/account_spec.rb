@@ -4,13 +4,12 @@ describe Account do
 
   subject(:account) { described_class.new(bank_statement) }
   let(:bank_statement) { double(:bank_statement) }
-  before { allow(bank_statement).to receive(:new)}
-  before { allow(bank_statement.new).to receive(:push)}
+  before { allow(bank_statement).to receive(:push)}
 
   context 'tests bank statement' do
 
     it 'should be initialized with a bank statement' do
-      expect(account.bank_statement).to eq bank_statement.new
+      expect(account.bank_statement).to eq bank_statement
     end
 
   end
