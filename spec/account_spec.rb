@@ -20,6 +20,16 @@ describe Account do
       expect(account.balance).to eq 0
     end
 
+    it 'should test that the balance increases with deposits' do
+      account.deposit(500)
+      expect(account.balance).to eq 500
+    end
+
+    it 'should test that the balance decreases with withdrawals' do
+      account.withdraw(500)
+      expect(account.balance).to eq -500
+    end
+
   end
 
   context 'new transactions' do
@@ -29,5 +39,9 @@ describe Account do
       expect(account.deposit(500)).to have_attributes(:action => 'Deposit', :amount => 500, :date => date)
     end
 
+    it 'should be able to create a new withdrawal' do
+      date = DateTime.now.strftime('%d/%m/%Y')
+      expect(account.withdraw(500)).to have_attributes(:action => 'Withdraw', :amount => 500, :date => date)
+    end
   end
 end
