@@ -5,6 +5,7 @@ describe Account do
   subject(:account) { described_class.new(bank_statement) }
   let(:bank_statement) { double(:bank_statement) }
   before { allow(bank_statement).to receive(:new)}
+  before { allow(bank_statement.new).to receive(:push)}
 
   context 'tests bank statement' do
 
